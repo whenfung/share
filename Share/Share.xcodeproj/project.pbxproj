@@ -13,6 +13,7 @@
 		0400E67726590C980019B272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0400E67526590C980019B272 /* Main.storyboard */; };
 		0400E67926590C9B0019B272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0400E67826590C9B0019B272 /* Assets.xcassets */; };
 		0400E67C26590C9B0019B272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0400E67A26590C9B0019B272 /* LaunchScreen.storyboard */; };
+		0400E69226591AD80019B272 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E69126591AD80019B272 /* TencentOpenAPI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0400E67B26590C9B0019B272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0400E67D26590C9B0019B272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0400E68A265918570019B272 /* Share-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Share-Bridge-Header.h"; sourceTree = "<group>"; };
+		0400E69126591AD80019B272 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0400E69226591AD80019B272 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +44,7 @@
 		0400E66326590C980019B272 = {
 			isa = PBXGroup;
 			children = (
+				0400E69126591AD80019B272 /* TencentOpenAPI.framework */,
 				0400E68A265918570019B272 /* Share-Bridge-Header.h */,
 				0400E66E26590C980019B272 /* Share */,
 				0400E66D26590C980019B272 /* Products */,
@@ -290,6 +294,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWV72G22NS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Share/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +319,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWV72G22NS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Share/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
