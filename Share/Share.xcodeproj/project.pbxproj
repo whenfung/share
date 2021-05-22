@@ -14,6 +14,14 @@
 		0400E67926590C9B0019B272 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0400E67826590C9B0019B272 /* Assets.xcassets */; };
 		0400E67C26590C9B0019B272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0400E67A26590C9B0019B272 /* LaunchScreen.storyboard */; };
 		0400E69226591AD80019B272 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E69126591AD80019B272 /* TencentOpenAPI.framework */; };
+		0400E69526591C850019B272 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E69426591C850019B272 /* Security.framework */; };
+		0400E69726591C8E0019B272 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E69626591C8E0019B272 /* SystemConfiguration.framework */; };
+		0400E69926591CA70019B272 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E69826591CA70019B272 /* libiconv.tbd */; };
+		0400E69B26591CB00019B272 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E69A26591CB00019B272 /* CoreGraphics.framework */; };
+		0400E69D26591CBA0019B272 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E69C26591CBA0019B272 /* libz.tbd */; };
+		0400E69F26591CCD0019B272 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E69E26591CCD0019B272 /* libsqlite3.tbd */; };
+		0400E6A126591CE50019B272 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E6A026591CE50019B272 /* CoreTelephony.framework */; };
+		0400E6A326591CF60019B272 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E6A226591CF60019B272 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +35,14 @@
 		0400E67D26590C9B0019B272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0400E68A265918570019B272 /* Share-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Share-Bridge-Header.h"; sourceTree = "<group>"; };
 		0400E69126591AD80019B272 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		0400E69426591C850019B272 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0400E69626591C8E0019B272 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0400E69826591CA70019B272 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		0400E69A26591CB00019B272 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0400E69C26591CBA0019B272 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0400E69E26591CCD0019B272 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0400E6A026591CE50019B272 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0400E6A226591CF60019B272 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +50,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0400E6A326591CF60019B272 /* WebKit.framework in Frameworks */,
+				0400E6A126591CE50019B272 /* CoreTelephony.framework in Frameworks */,
+				0400E69F26591CCD0019B272 /* libsqlite3.tbd in Frameworks */,
+				0400E69D26591CBA0019B272 /* libz.tbd in Frameworks */,
+				0400E69B26591CB00019B272 /* CoreGraphics.framework in Frameworks */,
+				0400E69926591CA70019B272 /* libiconv.tbd in Frameworks */,
+				0400E69726591C8E0019B272 /* SystemConfiguration.framework in Frameworks */,
+				0400E69526591C850019B272 /* Security.framework in Frameworks */,
 				0400E69226591AD80019B272 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +72,7 @@
 				0400E68A265918570019B272 /* Share-Bridge-Header.h */,
 				0400E66E26590C980019B272 /* Share */,
 				0400E66D26590C980019B272 /* Products */,
+				0400E69326591C850019B272 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,21 @@
 				0400E67D26590C9B0019B272 /* Info.plist */,
 			);
 			path = Share;
+			sourceTree = "<group>";
+		};
+		0400E69326591C850019B272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0400E6A226591CF60019B272 /* WebKit.framework */,
+				0400E6A026591CE50019B272 /* CoreTelephony.framework */,
+				0400E69E26591CCD0019B272 /* libsqlite3.tbd */,
+				0400E69C26591CBA0019B272 /* libz.tbd */,
+				0400E69A26591CB00019B272 /* CoreGraphics.framework */,
+				0400E69826591CA70019B272 /* libiconv.tbd */,
+				0400E69626591C8E0019B272 /* SystemConfiguration.framework */,
+				0400E69426591C850019B272 /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

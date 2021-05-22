@@ -5,4 +5,5 @@
 
 ## QQ
 
-- 
+- 导入 `QQ SDK`，注意删掉其中两个文件。（太多泪，这里不说了 🙊）
+- 添加 `SDK` 依赖的系统库文件。（`WebKit.framework` 、`CoreTelephony.framework` 、`libsqlite3.tbd` 、`libz.tbd` 、`CoreGraphics.framework` 、`libiconv.tbd` 、`SystemConfiguration.framework` 、`Security.framework` ）
