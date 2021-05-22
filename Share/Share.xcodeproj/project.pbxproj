@@ -24,6 +24,7 @@
 		0400E67826590C9B0019B272 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0400E67B26590C9B0019B272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0400E67D26590C9B0019B272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0400E68A265918570019B272 /* Share-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Share-Bridge-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		0400E66326590C980019B272 = {
 			isa = PBXGroup;
 			children = (
+				0400E68A265918570019B272 /* Share-Bridge-Header.h */,
 				0400E66E26590C980019B272 /* Share */,
 				0400E66D26590C980019B272 /* Products */,
 			);
@@ -296,6 +298,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.professordeng.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Share-Bridge-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,6 +319,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.professordeng.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Share-Bridge-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
