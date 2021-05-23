@@ -344,6 +344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.professordeng.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Share-Bridge-Header.h";
@@ -369,6 +370,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-fobjc-arc";
 				PRODUCT_BUNDLE_IDENTIFIER = com.professordeng.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Share-Bridge-Header.h";
