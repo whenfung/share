@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case .loginByWechat:
             print("微信登录")
         case .loginByQQ:
-            print("QQ 登录")
+            Sdk.Qq.login()
         case .loginByWeibo:
             print("微博登录")
         }

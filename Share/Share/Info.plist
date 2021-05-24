@@ -7,6 +7,7 @@
 		<string>mqq</string>
 		<string>mqqapi</string>
 		<string>mqqopensdkapiv2</string>
+		<string>mqqopensdknopasteboard</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
