@@ -11,4 +11,7 @@
 - `Build Settings` 中的 `Other Linker Flags` 项中，添加 `-fobjc-arc`
 - `Info` 的 `URL Types` 中添加 `URL Scheme` ，`identifier` 为 `tencentOpenAPI`，`URL Schemes` 为 `tencent222222`。
 - 在 `info.plist` 中配置 `LSApplicationQueriesSchemes`，其中 `Type` 为 `Array`，包括 `mqq` 、`mqqapi` 、`mqqopensdkapiv2`
+- 重写 `AppDelegate` 的 `handleOpenURL` 和 `openURL` 方法
+- `TencentSessionDelegate` 协议
+- 初始化 `iOS SDK API` 数据对象 `TencentOauth`
 

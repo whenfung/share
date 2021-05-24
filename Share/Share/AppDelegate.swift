@@ -9,8 +9,21 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var tencentOauth: TencentOAuth?
+    let permissions = ["get_user_info", "get_simple_userinfo", "add_t", nil]
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        TencentOAuth.handleOpen(url)
+    }
+
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        TencentOAuth.handleOpen(url)
+    }
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        _ = TencentOAuth(appId: "222222", andDelegate: self)
+        tencentOauth = TencentOAuth(appId: "222222", andDelegate: self)
+//        tencentOauth?.redirectURI = "www.markji.com"
+
         return true
     }
 
