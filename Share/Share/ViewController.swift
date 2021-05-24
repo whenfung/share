@@ -38,7 +38,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         case .shareToMoment:
             print("朋友圈分享")
         case .shareToQQ:
-            print("QQ 分享")
+            Sdk.Qq.shareText("祝你天天开心")
         case .shareToQzone:
             print("QQ 空间分享")
         case .shareToWeibo:

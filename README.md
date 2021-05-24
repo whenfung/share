@@ -16,4 +16,9 @@
   - ⚠️  如果上个操作没有配置对应的 `scheme`，`openURL` 会报错
 - `TencentSessionDelegate` 协议
 - 初始化 `iOS SDK API` 数据对象 `TencentOauth`
+-  调用登录 `API`
+
+---
+
+分享实现步骤
 

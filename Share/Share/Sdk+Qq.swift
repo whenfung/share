@@ -14,15 +14,51 @@ extension Sdk.Qq {
         helper.login()
     }
 
+    @discardableResult
     static func handleOpen(_ url: URL) -> Bool {
-        TencentOAuth.handleOpen(url)
+        QQApiInterface.handleOpen(url, delegate: helper)
+        return TencentOAuth.handleOpen(url)
+    }
+
+    static func shareText(_ text: String) {
+        let obj = QQApiTextObject(text: text)
+        let req = SendMessageToQQReq(content: obj)
+        let code = QQApiInterface.send(req)
+        if code == .EQQAPISENDSUCESS {
+            print("分享成功")
+        }
+    }
+
+    static func shareImage(_ image: UIImage) {
+        let data = image.pngData()
+        let obj = QQApiImageObject(data: data,
+                                   previewImageData: data,
+                                   title: "title",
+                                   description: "description")
+        let req = SendMessageToQQReq(content: obj)
+        let code = QQApiInterface.send(req)
+        if code == .EQQAPISENDSUCESS {
+            print("分享成功")
+        }
     }
 }
 
 // MARK: - Delegate Class
 
 extension Sdk.Qq {
-    private class Helper: NSObject, TencentSessionDelegate {
+    private class Helper: NSObject, TencentSessionDelegate, QQApiInterfaceDelegate {
+        func onReq(_ req: QQBaseReq!) {
+            print("接受到返回")
+        }
+
+        func onResp(_ resp: QQBaseResp!) {
+            print("接受到返回")
+        }
+
+        func isOnlineResponse(_ response: [AnyHashable : Any]!) {
+            print("接受到返回")
+        }
+
         private var tencentOAuth: TencentOAuth?
 
         override init() {
@@ -32,7 +68,7 @@ extension Sdk.Qq {
         }
 
         func login() {
-            let permissions: [Any] = ["get_user_info"]
+            let permissions: [Any] = [kOPEN_PERMISSION_GET_USER_INFO]
             tencentOAuth?.authorize(permissions)
         }
 
