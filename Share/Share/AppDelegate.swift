@@ -9,21 +9,17 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var tencentOauth: TencentOAuth?
-    let permissions = ["get_user_info", "get_simple_userinfo", "add_t", nil]
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        TencentOAuth.handleOpen(url)
+        Sdk.Qq.handleOpen(url)
     }
 
     func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
-        TencentOAuth.handleOpen(url)
+        Sdk.Qq.handleOpen(url)
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        tencentOauth = TencentOAuth(appId: "222222", andDelegate: self)
-//        tencentOauth?.redirectURI = "www.markji.com"
-
+        Sdk.Qq.register()
         return true
     }
 
@@ -40,10 +36,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-}
-
-extension AppDelegate: TencentSessionDelegate {
-    func tencentDidLogin() {}
-    func tencentDidNotLogin(_ cancelled: Bool) {}
-    func tencentDidNotNetWork() {}
 }

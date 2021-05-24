@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    private let shareItems = ShareType.allCases
+    private let oauthItems = OauthType.allCases
     private let cellIdentifier = "CellIdentifier"
 
     override func viewDidLoad() {
@@ -21,36 +21,46 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        shareItems.count
+        oauthItems.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
-        cell.textLabel?.text = shareItems[indexPath.row].rawValue
+        cell.textLabel?.text = oauthItems[indexPath.row].rawValue
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        switch shareItems[indexPath.row] {
-        case .wechat:
+        switch oauthItems[indexPath.row] {
+        case .shareToWechat:
             print("微信分享")
-        case .moment:
+        case .shareToMoment:
             print("朋友圈分享")
-        case .qq:
+        case .shareToQQ:
             print("QQ 分享")
-        case .qzone:
+        case .shareToQzone:
             print("QQ 空间分享")
-        case .weibo:
+        case .shareToWeibo:
             print("微博分享")
+        case .loginByWechat:
+            print("微信登录")
+        case .loginByQQ:
+            print("QQ 登录")
+        case .loginByWeibo:
+            print("微博登录")
         }
     }
 }
 
-enum ShareType: String, CaseIterable {
-    case wechat
-    case moment
-    case qq
-    case qzone
-    case weibo
+enum OauthType: String, CaseIterable {
+    case shareToWechat = "分享到微信"
+    case shareToMoment = "分享到朋友圈"
+    case shareToQQ = "分享到 QQ"
+    case shareToQzone = "分析到 QQ 空间"
+    case shareToWeibo = "分析到微博"
+
+    case loginByWechat = "微信登录"
+    case loginByQQ = "QQ 登录"
+    case loginByWeibo = "微博登录"
 }

@@ -22,6 +22,8 @@
 		0400E69F26591CCD0019B272 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E69E26591CCD0019B272 /* libsqlite3.tbd */; };
 		0400E6A126591CE50019B272 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E6A026591CE50019B272 /* CoreTelephony.framework */; };
 		0400E6A326591CF60019B272 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400E6A226591CF60019B272 /* WebKit.framework */; };
+		04806815265B4A2F0078E7D7 /* Sdk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04806814265B4A2F0078E7D7 /* Sdk.swift */; };
+		04806817265B56770078E7D7 /* Sdk+Qq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04806816265B56770078E7D7 /* Sdk+Qq.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		0400E69E26591CCD0019B272 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0400E6A026591CE50019B272 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		0400E6A226591CF60019B272 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		04806814265B4A2F0078E7D7 /* Sdk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sdk.swift; sourceTree = "<group>"; };
+		04806816265B56770078E7D7 /* Sdk+Qq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sdk+Qq.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				0400E66F26590C980019B272 /* AppDelegate.swift */,
 				0400E67126590C980019B272 /* SceneDelegate.swift */,
 				0400E67326590C980019B272 /* ViewController.swift */,
+				04806814265B4A2F0078E7D7 /* Sdk.swift */,
+				04806816265B56770078E7D7 /* Sdk+Qq.swift */,
 				0400E67526590C980019B272 /* Main.storyboard */,
 				0400E67826590C9B0019B272 /* Assets.xcassets */,
 				0400E67A26590C9B0019B272 /* LaunchScreen.storyboard */,
@@ -184,7 +190,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0400E67426590C980019B272 /* ViewController.swift in Sources */,
+				04806817265B56770078E7D7 /* Sdk+Qq.swift in Sources */,
 				0400E67026590C980019B272 /* AppDelegate.swift in Sources */,
+				04806815265B4A2F0078E7D7 /* Sdk.swift in Sources */,
 				0400E67226590C980019B272 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
