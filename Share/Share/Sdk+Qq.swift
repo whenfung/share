@@ -16,8 +16,10 @@ extension Sdk.Qq {
 
     @discardableResult
     static func handleOpen(_ url: URL) -> Bool {
-        QQApiInterface.handleOpen(url, delegate: helper)
-        return TencentOAuth.handleOpen(url)
+        if TencentOAuth.canHandleOpen(url) {
+            return TencentOAuth.handleOpen(url)
+        }
+        return QQApiInterface.handleOpen(url, delegate: helper)
     }
 
     static func shareText(_ text: String) {
@@ -64,7 +66,6 @@ extension Sdk.Qq {
         override init() {
             super.init()
             tencentOAuth = TencentOAuth(appId: "222222", andDelegate: self)
-//            tencentOAuth.redirectURI = "www.professordeng.com"
         }
 
         func login() {
